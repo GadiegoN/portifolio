@@ -1,5 +1,6 @@
 # portifolio
-em desenvolvimento...
+
+Portifolio de Gadiego Nogueira
 
 ## Tarefas
 
