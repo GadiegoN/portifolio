@@ -210,7 +210,7 @@
                 <h1>Faça um orçamento</h1>
                 <form action="">
                     <label for="qtde">Quantidade de paginas</label>
-                    <input type="number" min="1" max="10" name="qtde" id="qted">
+                    <input type="number" min="1" max="10" name="qtde" id="qtde">
                     <label for="js">Preciso de um script JS</label>
                     <input type="checkbox" name="js" id="js">
                     <label for="">Layout</label>
@@ -221,7 +221,8 @@
                         <label for="layout-nao">Já tenho um layout</label>
                     </div>
                     <label for="prazo">Prazo</label>
-                    <input type="range" name="prazo" id="prazo">
+                    <input type="range" name="prazo" id="prazo" min="1" max="10">
+                    <label id="preco">R$ 0,00</label>
                     <button class="btn-orcamento" type="submit">Enviar</button>
                 </form>
             </div>
