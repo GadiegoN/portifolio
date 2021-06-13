@@ -343,6 +343,7 @@ header {
 .projetos {
     display: flex;
     justify-content: space-evenly;
+    height: 100vh;
 }
 
 .card {
@@ -425,3 +426,109 @@ header {
 }
 
 /* Fim de Sessão Projetos */
+
+/* Sessão Contato */
+
+.sessao-contato {
+    width: 100%;
+    height: 100vh;
+    background-color: #242424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-wrapper {
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, .5);
+}
+
+.contato-left {
+    width: 35%;
+    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url("./images/contato.jpg");
+    background-size: cover;
+}
+
+.contato-right {
+    width: 65%;
+    background-color: #eee;
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+.sessao-contato h1 {
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-primary);
+    color: #272727;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.sessao-contato form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.field-group {
+    position: relative;
+}
+
+.field-group textarea {
+    padding-top: 1rem;
+    max-width: 25rem;
+    max-height: 3rem;
+}
+
+.field {
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: var(--font-secundary);
+    border-bottom: 2px dashed #636363;
+    height: 3rem;
+    outline: none;
+    margin: 1rem 0;
+}
+
+.field-label {
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    font-size: 1.2rem;
+    font-family: var(--font-secundary);
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.field:focus ~ label {
+    top: 0;
+    font-size: 1rem;
+}
+
+.field:focus {
+    border-bottom: 1px solid;
+}
+
+.btn-submit {
+    background: #6a3093;
+    background: -webkit-linear-gradient(to right, #a044ff,#6a3093);
+    background: linear-gradient(to right, #a044ff,#6a3093);
+    font-family: var(--font-action);
+    color: #eee;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 0 .1rem .8rem rgb(0, 0, 0, 0.4);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    width: 70%;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+/* Fim de Sessão Contato */
