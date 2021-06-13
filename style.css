@@ -8,10 +8,31 @@
     text-decoration: none;
 }
 
+#link-topo {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #6a3093;
+    background: -webkit-linear-gradient(to right, #a044ff,#6a3093);
+    background: linear-gradient(to right, #a044ff,#6a3093);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 0.1rem 0.6rem #00000099;
+}
+
 :root {
     --font-primary:     "Baloo Da 2", serif;
     --font-secundary:   "Josefin Slab", serif;
     --font-action:      "Muli", serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* menu */
@@ -21,7 +42,7 @@
     position: fixed;
     height: 2rem;
     width: 2rem;
-    z-index: 100;
+    z-index: 160;
     right: 2rem;
     top: 2rem;
     display: flex;
@@ -191,6 +212,7 @@ header {
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 150;
 }
 
 .show-menu .sidebar {
@@ -532,3 +554,116 @@ header {
 }
 
 /* Fim de Sessão Contato */
+
+/* Sessão Orçamento */
+
+.sessao-orcamento {
+    width: 100%;
+    height: 100vh;
+    background: url("./images/bg-orcamento.jpg");
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orcamento-wrapper {
+    width: 60%;
+    height: 80%;
+    background-color: #ffffff99;
+    border-radius: 10px;
+    box-shadow: 0 0.1rem 0.3rem #000;
+    position: relative;
+}
+
+.sessao-orcamento h1 {
+    position: absolute;
+    top: -2.5rem;
+    left: 2rem;
+    background: #6a3093;
+    background: -webkit-linear-gradient(to right, #a044ff,#6a3093);
+    background: linear-gradient(to right, #a044ff,#6a3093);
+    padding: 0 3rem;
+    color: #fff;
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: lighter;
+    box-shadow: 0 0.1rem 0.3rem #000;
+    border-radius: 10px;
+}
+
+.sessao-orcamento form {
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.sessao-orcamento label {
+    font-family: var(--font-secundary);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sessao-orcamento input[type="number"] {
+    font-family: var(--font-secundary);
+    width: 4rem;
+    font-size: 2rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 0.3rem;
+}
+
+.btn-orcamento {
+    padding: 1rem;
+    background: #6a3093;
+    background: -webkit-linear-gradient(to right, #a044ff,#6a3093);
+    background: linear-gradient(to right, #a044ff,#6a3093);
+    font-family: var(--font-action);
+    color: #eee;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 0 .1rem .8rem rgb(0, 0, 0, 0.4);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    grid-column: 2;
+    cursor: pointer;
+}
+/* Fim de Sessão Orçamento */
+
+/* Rodapé */
+
+footer {
+    width: 100%;
+    height: 7rem;
+    background-color: #17181B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p {
+    font-family: var(--font-secundary);
+    color:  #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list a {
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+}
+
+.social-list ul {
+    display: flex;
+}
+
+/* Fim do Rodapé */
