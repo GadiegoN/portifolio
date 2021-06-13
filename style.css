@@ -247,7 +247,7 @@ header {
 
 /* fim do menu lateral */
 
-/* Sessão */
+/* Sessão Conhecimentos */
 
 .conhecimentos {
     display: grid;
@@ -336,4 +336,92 @@ header {
     width: 100%;
 }
 
-/* Fim de Sessão */
+/* Fim de Sessão Conhecimentos */
+
+/* Sessão Projetos */
+
+.projetos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 15rem;
+    height: 25rem;
+    position: relative;
+}
+
+.card-img-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    border-radius: .5rem;
+}
+
+.card-img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    opacity: .8;
+    transition: opacity .3s;
+}
+
+.card:hover .card-img-wrapper img {
+    opacity: .5;
+}
+
+.card-info {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0.3 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
+    transition: all .3s;
+}
+
+.card-info h2 {
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: 500;
+    color: #eee;
+}
+
+.card-info h3 {
+    font-family: var(--font-secundary);
+    font-weight: bolder;
+    color: #ff4081;
+    margin-bottom: 1.5rem;
+}
+
+.card-info p {
+    font-family: var(--font-secundary);
+    color: #eee;
+    font-weight: 400;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.card-info button {
+    width: 8rem;
+    height: 2.5rem;
+    border: none;
+    background: #FF0099;
+    background: -webkit-linear-gradient(to left, #493240, #FF0099);
+    background: linear-gradient(to left, #493240, #FF0099);
+    font-family: var(--font-action);
+    font-size: 1rem;
+    color: #eee;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.card:hover .card-info {
+    bottom: .2rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Fim de Sessão Projetos */
